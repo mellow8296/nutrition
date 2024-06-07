@@ -15,6 +15,7 @@ try {
 }
 // 取得したデータをオブジェクト形式で配列に格納
 $nutrition_array = $sql->fetchAll(PDO::FETCH_OBJ);
+$condition_array = ['name' => '準備中'];
 ?>
 
 
