@@ -1,6 +1,5 @@
 <?php
-// data.phpを読み込み、データベース接続とデータ取得の準備を行います
-require_once('data.php');
+require_once('../data.php');
 ?>
 
 <!DOCTYPE html>
@@ -11,12 +10,12 @@ require_once('data.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>症状情報</title>
     <!-- スタイルシートのリンク -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <!-- Google Fontsからフォントを読み込み -->
     <link href='https://fonts.googleapis.com/css?family=Pacifico|Lato' rel='stylesheet' type='text/css'>
 </head>
 <header>
-    <h1>🍵健康ハック🍵</h1>
+    <h1 class="title">🍵 健康ハック 🍵</h1>
 </header>
 
 <body>
@@ -25,7 +24,7 @@ require_once('data.php');
 
     <div class="button-container">
         <!-- ホームページへのリンク -->
-        <a href="index.php">ホーム</a>
+        <a href="../index.php">ホーム</a>
     </div>
 
 </body>

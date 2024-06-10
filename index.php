@@ -10,18 +10,18 @@
 
 <body>
     <header>
-        <h1>🍵健康ハック🍵</h1>
+        <h1 class="title">🍵 健康ハック 🍵</h1>
     </header>
 
     <div class="hero">
         <div class="hero-text">
-            素敵な健康を始めよう
+            素敵なライフスタイルを
         </div>
     </div>
 
     <main>
         <h3>メニューを選択してください</h3>
-        <form class="button-container" action="select.php" method="post">
+        <form class="button-container" action="select/select.php" method="post">
             <button class="button" type="submit" name="menu" value="栄養素">栄養素検索</button>
             <br>
             <button class="button" type="submit" name="menu" value="症状">症状検索</button>

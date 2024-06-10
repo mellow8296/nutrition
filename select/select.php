@@ -1,13 +1,13 @@
 <?php
 // data.phpを読み込み、データベース接続とデータ取得を行います
-require_once('data.php');
+require_once('../data.php');
 $menu = $_POST['menu'];
 // メニュー選択に応じてアクションとオプション配列を設定
 if ($menu == '栄養素') {
     $action = 'nutrition.php';
     $option_array = $nutrition_array;
 } elseif ($menu == '症状') {
-    header('Location:condition.php');
+    header('Location:../result/condition.php');
     $action = 'condition.php';
     $option_array = $condition_array;
 }
@@ -21,7 +21,7 @@ if ($menu == '栄養素') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>栄養素検索</title>
     <!-- スタイルシートのリンク -->
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles.css">
     <!-- Google Fontsからフォントを読み込み -->
     <link href='https://fonts.googleapis.com/css?family=Pacifico|Lato' rel='stylesheet' type='text/css'>
     <!-- jQueryの読み込み -->
@@ -36,7 +36,7 @@ if ($menu == '栄養素') {
 
 <body>
     <header>
-        <h1>🍵健康ハック🍵</h1>
+        <h1 class="title">🍵 健康ハック🍵</h1>
     </header>
 
     <main>
@@ -45,7 +45,7 @@ if ($menu == '栄養素') {
         <p><?php echo $menu; ?>を選択してください</p>
 
         <!-- 選択のためのドロップダウンメニュー -->
-        <form action="<?php echo $action; ?>" method="post">
+        <form action="../result/<?php echo $action; ?>" method="post">
 
             <!-- 選択のためのドロップダウンメニュー -->
             <select class="select_search" name="select" id="select" style="width: 200px;">
@@ -61,13 +61,13 @@ if ($menu == '栄養素') {
                     $('.select_search').select2();
                 });
             </script>
-
+            <br><br>
             <!-- 送信ボタン -->
-            <input type="submit" value="送信" name="submit">
+            <input class="submit-button" type="submit" value="送信" name="submit">
         </form>
         <div class="button-container">
             <!-- ホームページへのリンク -->
-            <a href="index.php">ホーム</a>
+            <a href="../index.php">ホーム</a>
         </div>
     </main>
     <footer>

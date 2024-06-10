@@ -1,6 +1,6 @@
 body {
-    background-color: #ffffff; /* 白色の背景 */
-    color: #333333; /* ダークグレーのテキスト */
+    background-color: #f0f0f0; /* 明るいグレーの背景 */
+    color: #333333;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -10,14 +10,21 @@ body {
 }
 
 header {
-    background-color: #4CAF50; /* 緑色のヘッダー */
+    background-color: #333333; /* ダークグレーのヘッダー */
     color: white;
-    padding: 20px;
+    padding: 15px;
     text-align: center;
 }
 
 h1 {
     margin: 0px;
+    font-family: 'Noto Sans', cursive;
+}
+
+.title {
+    color: #ffffff;
+    font-weight: lighter; /* 文字を細くする */
+    font-family: 'ヒラギノ角ゴシック', cursive;
 }
 
 main {
@@ -26,28 +33,28 @@ main {
     text-align: center;
 }
 
-a, button {
-    color: #4CAF50; /* 緑色のリンク */
+a, button ,.submit-button{
+    color: #333333;
     text-decoration: none;
     font-weight: bold;
     display: inline-block;
     margin: 10px 0;
     padding: 10px 20px;
-    border: 2px solid #4CAF50;
+    border: 2px solid #333333;
     border-radius: 5px;
     transition: background-color 0.3s, color 0.3s;
-    font-size: 1em; /* フォントサイズを調整 */
+    font-size: 1em;
     background: none; /* ボタンの背景を透明に */
     cursor: pointer; /* ボタンのカーソルをポインターに */
 }
 
-a:hover, button:hover {
-    background-color: #4CAF50;
+a:hover, button:hover ,.submit-button:hover{
+    background-color: #333333;
     color: white;
 }
 
 footer {
-    background-color: #f1f1f1; /* 淡いグレーのフッター */
+    background-color: #e0e0e0;
     color: #333333;
     text-align: center;
     padding: 10px;
@@ -56,17 +63,17 @@ footer {
 .hero {
     width: 100%;
     height: 300px;
-    background-image: url('https://source.unsplash.com/1600x900/?healthy'); /* 健康的な画像のURL */
+    background-image: url('images/publicdomainq-0008411xlw.jpg'); /* モノクロの画像のURL */
     background-size: cover;
     background-position: center;
     margin-bottom: 20px;
 }
 
 .hero-text {
-    color: white;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: rgb(255, 255, 255);
+    font-family: 'Noto Sans', cursive;
     font-size: 2em;
-    padding: 100px 20px;
+    padding: 75px 100px 125px 0px;
     text-align: center;
 }
 
@@ -79,38 +86,39 @@ footer {
 }
 
 .button-container a, .button-container button {
-    padding: 10px 30px; /* ボタンの内側の余白を調整 */
-    font-size: 1.2em; /* ボタンのフォントサイズを調整 */
+    padding: 10px 30px;
+    font-size: 1.2em;
     border-radius: 25px; /* ボタンの角を丸くする */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* ボタンに影を追加 */
     transition: transform 0.2s; /* ボタンのホバー時のアニメーション */
 }
 
-.button-container a:hover, .button-container button:hover {
+.button-container a:hover, .button-container button:hover ,.submit-button:hover{
     transform: translateY(-2px); /* ボタンを少し上に移動 */
 }
 .nutrition-name {
     font-family: 'Pacifico', cursive;
+    font-family: 'Noto Sans', cursive;
     font-size: 3.0em;
-    text-align: center; /* 中央揃えでバランスを取る */
-    margin: 20px 0; /* 上下のマージンで空間を作る */
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); /* 軽い影で立体感を出す */
+    text-align: center;
+    margin: 20px 0;
+
 }
 
 .nutrition-result {
-    font-family: 'Lato', sans-serif; /* シンプルで読みやすいフォント */
-    background-color: #f9f9f9; /* 薄いグレーの背景色 */
-    border-left: 5px solid #4CAF50; /* 左側に緑のボーダー */
-    padding: 10px 20px; /* 内側の余白 */
-    margin: 10px 70px; /* 外側の余白（左右に余白を追加） */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* ソフトな影 */
+    font-family: 'Lato', sans-serif;
+    background-color: #f9f9f9;
+    border-left: 5px solid #333333;
+    padding: 10px 20px;
+    margin: 10px 70px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
 h3 {
-    color: #333333; /* 濃いグレーの文字色 */
-    font-family: 'Pacifico', cursive; /* 手書き風のフォント */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* 文字の影 */
-    margin-bottom: 20px; /* 下の余白 */
+    color: #333333;
+    font-family: 'Pacifico', cursive;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
     margin-left: 75px;
     margin-right: 70px;
 }
