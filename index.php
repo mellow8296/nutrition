@@ -9,10 +9,7 @@
 </head>
 
 <body>
-    <header>
-        <h1 class="title">🍵 健康ハック 🍵</h1>
-    </header>
-
+    <?php include(dirname(__FILE__) . "/parts/header.php"); ?>
     <div class="hero">
         <div class="hero-text">
             素敵なライフスタイルを
@@ -28,9 +25,7 @@
         </form>
     </main>
 
-    <footer>
-        <p>引用：Supplement A to C: Yoshinori Yamamoto gyouseki-syuu (Japanese Edition)</p>
-    </footer>
+    <?php include(dirname(__FILE__) . "/parts/footer.php"); ?>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 body {
-    background-color: #f0f0f0; /* 明るいグレーの背景 */
+    background-color: #f0f0f0;
     color: #333333;
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -10,9 +10,9 @@ body {
 }
 
 header {
-    background-color: #333333; /* ダークグレーのヘッダー */
+    background-color: #2c2c2c;
     color: white;
-    padding: 15px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -25,6 +25,7 @@ h1 {
     color: #ffffff;
     font-weight: lighter; /* 文字を細くする */
     font-family: 'ヒラギノ角ゴシック', cursive;
+    font-size: 1.9em;
 }
 
 main {
@@ -33,7 +34,7 @@ main {
     text-align: center;
 }
 
-a, button ,.submit-button{
+a:not(.nutrition-link), button ,.submit-button{
     color: #333333;
     text-decoration: none;
     font-weight: bold;
@@ -48,7 +49,7 @@ a, button ,.submit-button{
     cursor: pointer; /* ボタンのカーソルをポインターに */
 }
 
-a:hover, button:hover ,.submit-button:hover{
+a:hover, button:hover ,.submit-button:hover {
     background-color: #333333;
     color: white;
 }
@@ -72,9 +73,9 @@ footer {
 .hero-text {
     color: rgb(255, 255, 255);
     font-family: 'Noto Sans', cursive;
-    font-size: 2em;
-    padding: 75px 100px 125px 0px;
-    text-align: center;
+    font-size: 1.9em;
+    padding: 90px 0px 210px 260px;
+    /* text-align: center; */
 }
 
 .button-container {

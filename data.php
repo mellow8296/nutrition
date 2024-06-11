@@ -9,13 +9,17 @@ try {
     // SQL文を準備し、nutritionテーブルから全データを選択
     $sql = $db->prepare('SELECT * FROM nutrition');
     $sql->execute(); // SQL文を実行
+    $nutrition_array = $sql->fetchAll(PDO::FETCH_OBJ);
+
+    // SQL文を準備し、nutritionテーブルから全データを選択
+    $sql = $db->prepare('SELECT * FROM conditions');
+    $sql->execute(); // SQL文を実行
+    $condition_array = $sql->fetchAll(PDO::FETCH_OBJ);
 } catch (PDOException $e) {
     // エラー発生時はエラーメッセージを表示して処理を終了
     die('エラーメッセージ：' . $e->getMessage());
 }
-// 取得したデータをオブジェクト形式で配列に格納
-$nutrition_array = $sql->fetchAll(PDO::FETCH_OBJ);
-$condition_array = ['name' => '準備中'];
+
 ?>
 
 

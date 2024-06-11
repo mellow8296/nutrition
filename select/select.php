@@ -7,7 +7,6 @@ if ($menu == '栄養素') {
     $action = 'nutrition.php';
     $option_array = $nutrition_array;
 } elseif ($menu == '症状') {
-    header('Location:../result/condition.php');
     $action = 'condition.php';
     $option_array = $condition_array;
 }
@@ -35,9 +34,7 @@ if ($menu == '栄養素') {
 </head>
 
 <body>
-    <header>
-        <h1 class="title">🍵 健康ハック🍵</h1>
-    </header>
+    <?php include(dirname(__FILE__) . "/../parts/header.php"); ?>
 
     <main>
 
@@ -70,9 +67,7 @@ if ($menu == '栄養素') {
             <a href="../index.php">ホーム</a>
         </div>
     </main>
-    <footer>
-        <p>引用：Supplement A to C: Yoshinori Yamamoto gyouseki-syuu (Japanese Edition)</p>
-    </footer>
+    <?php include(dirname(__FILE__) . "/../parts/footer.php"); ?>
 </body>
 
 </html>
