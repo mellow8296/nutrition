@@ -38,11 +38,11 @@ if ($menu == '栄養素') {
 
     <main>
 
-        <h1><?php echo $menu; ?>検索</h1>
+        <h1 style="margin-bottom: 30px;"><?php echo $menu; ?>検索</h1>
         <p><?php echo $menu; ?>を選択してください</p>
 
         <!-- 選択のためのドロップダウンメニュー -->
-        <form action="../result/<?php echo $action; ?>" method="post">
+        <form class="select-form" action="../result/<?php echo $action; ?>" method="post">
 
             <!-- 選択のためのドロップダウンメニュー -->
             <select class="select_search" name="select" id="select" style="width: 200px;">

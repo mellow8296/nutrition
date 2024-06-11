@@ -82,8 +82,8 @@ footer {
     display: flex;
     justify-content: center;
     gap: 20px; /* ボタン間のスペース */
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 80px;
 }
 
 .button-container a, .button-container button {
@@ -97,6 +97,7 @@ footer {
 .button-container a:hover, .button-container button:hover ,.submit-button:hover{
     transform: translateY(-2px); /* ボタンを少し上に移動 */
 }
+
 .nutrition-name {
     font-family: 'Pacifico', cursive;
     font-family: 'Noto Sans', cursive;
@@ -123,3 +124,28 @@ h3 {
     margin-left: 75px;
     margin-right: 70px;
 }
+
+
+.select_search{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 16px;
+    color: #333;
+    padding: 8px 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: border-color 0.3s, box-shadow 0.3s;
+    padding-top: 70px;
+}
+
+.select_search:focus {
+    border-color: #007BFF;
+    box-shadow: 0 2px 8px rgba(0,123,255,0.2);
+}
+
+.select-form {
+    margin-bottom: 70px;
+}
+
+
